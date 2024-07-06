@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Student Performance Analysis</h1>
+        </header>
+        <form id="studentForm" class="form">
+            <input type="text" id="enrollmentNo" placeholder="Enrollment No" required>
+            <input type="text" id="name" placeholder="Student Name" required>
+            <input type="number" step="0.01" id="score" placeholder="Score" required>
+            <select id="branch" required>
+                <option value="">Select Branch</option>
+                <option value="Computer Science">Computer Science Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Electronics Engineering">Electronics Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+            </select>
+            <button type="submit">Add Student</button>
+        </form>
+        <div class="list">
+            <h2>Student List</h2>
+            <ul id="studentList"></ul>
+        </div>
+        <div class="chart">
+            <h2>Performance Chart</h2>
+            <canvas id="studentChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

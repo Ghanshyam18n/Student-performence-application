@@ -1,0 +1,186 @@
+/* Global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light gray text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.container:hover {
+    background-color: #242424; /* Slightly lighter on hover */
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.header h1 {
+    color: #4dabf7; /* Light blue color for heading */
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add space below heading */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.header h1:hover {
+    color: #1e88e5; /* Darker blue on hover */
+}
+
+.form {
+    margin-bottom: 20px;
+    background-color: #1f1f1f; /* Dark gray background for form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.form:hover {
+    background-color: #272727; /* Slightly lighter on hover */
+    transform: scale(1.01); /* Slight zoom on hover */
+}
+
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e0e0e0; /* Light gray label text */
+}
+
+.form input, .form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333333; /* Darker gray border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #2b2b2b; /* Medium dark gray background for inputs */
+    color: #f5f5f5; /* Lighter text color for better readability */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.form input:focus, .form select:focus {
+    background-color: #333333; /* Slightly lighter on focus */
+    border-color: #4dabf7; /* Light blue border on focus */
+}
+
+.form input::placeholder {
+    color: #888888; /* Placeholder text color */
+}
+
+.form button {
+    background-color: #4dabf7; /* Light blue button background */
+    color: #121212; /* Dark text color */
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.form button:hover {
+    background-color: #1e88e5; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.list, .chart {
+    margin-top: 20px;
+}
+
+.list h2, .chart h2 {
+    color: #4dabf7; /* Light blue color for headings */
+    border-bottom: 1px solid #333333; /* Darker gray border */
+    padding-bottom: 5px;
+}
+
+.list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li {
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #2b2b2b; /* Medium dark gray background for list items */
+    border: 1px solid #3e3e3e; /* Darker gray border */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.list li:hover {
+    background-color: #3e3e3e; /* Slightly darker gray on hover */
+    transform: scale(1.01); /* Slight zoom on hover */
+}
+
+.chart canvas {
+    max-width: 100%;
+    width: 300px; /* Thinner width for the canvas */
+    height: 200px; /* Thinner height for the canvas */
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Alert message */
+.alertMessage {
+    background-color: #ff8a80; /* Light red background */
+    color: #121212; /* Dark text color */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: none;
+    text-align: center; /* Center align text */
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+/* Additional Color and Styles */
+.form input:hover, .form select:hover {
+    background-color: #373737; /* Slightly darker on hover */
+}
+
+.header h2 {
+    color: #4dabf7; /* Light blue subheading color */
+}
+
+.list li:nth-child(even) {
+    background-color: #323232; /* Alternate row color */
+}
+
+.form select option {
+    background-color: #2b2b2b; /* Dropdown background */
+    color: #e0e0e0; /* Dropdown text color */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form input, .form select, .form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .form button {
+        padding: 10px 15px;
+    }
+
+    .list h2, .chart h2 {
+        font-size: 18px;
+    }
+
+    .chart canvas {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+}
